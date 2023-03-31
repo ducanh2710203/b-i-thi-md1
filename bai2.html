@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Viết hàm deleteNumberFromArray() nhận vào một mảng các số
-      nguyên và một số nguyên vị trí index. Hàm trả về mảng ban đầu
-      nếu vị trí index có giá trị nhỏ hơn 0 hoặc lớn hơn chiều dài mảng.
-      Nếu không thì trả về mảng mới đã được xóa phần tử ở vị trí
-      index</title>
+        nguyên và một số nguyên vị trí index. Hàm trả về mảng ban đầu
+        nếu vị trí index có giá trị nhỏ hơn 0 hoặc lớn hơn chiều dài mảng.
+        Nếu không thì trả về mảng mới đã được xóa phần tử ở vị trí
+        index</title>
 </head>
 <body>
 
 </body>
 </html>
 <script>
-    let arr = [12,4,2,54,76,83,1]
-    let index = + prompt("nhập số bất kỳ")
+    let arr = [12, 4, 2, 54, 76, 83, 1]
+    let index = +prompt("nhập số bất kỳ")
+
     function deleteNumberFromArray(a, index) {
         if (index < 0 || index >= a.length) {
             return a;
@@ -22,5 +23,5 @@
         return a.slice(0, index).concat(a.slice(index + 1));
     }
 
-    console.log(deleteNumberFromArray(arr,index))
+    console.log(deleteNumberFromArray(arr, index))
 </script>

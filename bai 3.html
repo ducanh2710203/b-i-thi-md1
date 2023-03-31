@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm sumOfListFibonacy() nhận vào một số nguyên x , hàm trả về giá trị là tổng các số
+        fibonacy từ 0 cho tới x. </title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function sumOfListFibonacci(x) {
+        if (x < 0) {
+            return 0;
+        }
+        let sum = 0;
+        let fib1 = 0;
+        let fib2 = 1;
+        for (let i = 0; i <= x; i++) {
+            sum += fib1;
+            let temp = fib2;
+            fib2 = fib1 + fib2;
+            fib1 = temp;
+        }
+        return sum;
+    }
+
+    let X = +prompt("nhập 1 so bất kỳ")
+    console.log(sumOfListFibonacci(X))
+</script>

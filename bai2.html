@@ -12,3 +12,15 @@
 
 </body>
 </html>
+<script>
+    let arr = [12,4,2,54,76,83,1]
+    let index = + prompt("nhập số bất kỳ")
+    function deleteNumberFromArray(a, index) {
+        if (index < 0 || index >= a.length) {
+            return a;
+        }
+        return a.slice(0, index).concat(a.slice(index + 1));
+    }
+
+    console.log(deleteNumberFromArray(arr,index))
+</script>
